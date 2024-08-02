@@ -19,7 +19,7 @@ class StatusController extends Controller
         // Verifica a conexão com o banco de dados
         try {
             $databaseVersion = DB::connection()->getPdo()->getAttribute(\PDO::ATTR_SERVER_VERSION);
-        } catch (\Exception $exception) {
+        } catch (\PDOException $exception) {
             $databaseConnection = false;
             $status = 'FAIL';
         }
