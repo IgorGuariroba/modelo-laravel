@@ -21,6 +21,7 @@
         "nunomaduro/collision": "^8.0",
         "pestphp/pest": "^2.35",
         "pestphp/pest-plugin-drift": "^2.6",
+        "pestphp/pest-plugin-laravel": "^2.4",
         "pestphp/pest-plugin-watch": "^2.1"
     },
     "autoload": {
@@ -32,7 +33,8 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Tests\\": "tests/"
+            "Tests\\": "tests/",
+            "Pest\\": "vendor/pestphp/pest/src/"
         }
     },
     "scripts": {
