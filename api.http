@@ -1,4 +1,17 @@
 ### GET request to example server
-GET {{base}}
+GET {{baseUrl}}
+
+###
+
+
+###
+POST {{baseUrl}}/register
+Content-Type: application/json
+
+{
+    "email": "user@email.com",
+    "name": "exampleuser",
+    "password": "password123"
+}
 
 ###
